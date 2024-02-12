@@ -1,4 +1,6 @@
 #Write a program that allows users to sign up and then proceed to sign in
+import time
+
 def login(email, password):   
     for user in users:
         if user["email"] == email and user["password"] == password:
@@ -38,7 +40,6 @@ while True:
         else:
             quit()
 
-
     elif choice.lower() == "sign in":
         email_input = input("Kindly type in the email address you registered with: \n")
         password_input = input("Kindly type in your password:")
@@ -49,5 +50,6 @@ while True:
 
     prompt_to_continue = input("Would you like to continue? (Press 'yes' to continue) \n").lower()
     if  prompt_to_continue != "yes":
+        time.sleep(3)
         print("\nThank You for using our service!\n")
         break

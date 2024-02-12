@@ -15,7 +15,7 @@ while True:
         number = int(user_input)
         if number >= 0:
             answer = factorial(number)
-            print(f"The factorial of {number} is factorial{answer}")
+            print(f"The factorial of {number} is factorial{answer} ")
             break
         else:
             print("Please enter a non - negative integer.")
